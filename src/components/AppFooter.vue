@@ -42,7 +42,7 @@ export default {
 
 <template>
     <footer>
-        <div class="container">
+        <div id="footer-top" class="container">
             <!--General Links-->
             <nav id="general-links">
                 <div class="dc-comics">
@@ -77,16 +77,16 @@ export default {
             <div class="container">
                 <div class="footer-link">
                     <!--Sign-up-->
-                    <div id="sign">ciao</div>
+                    <div id="sign"><button>SIGN-UP NOW!</button></div>
                     <!--Socials-->
                     <div id="socials">
                         <h3>FOLLOW US</h3>
                         <ul>
-                            <li><a href="#">social</a></li>
-                            <li><a href="#">social</a></li>
-                            <li><a href="#">social</a></li>
-                            <li><a href="#">social</a></li>
-                            <li><a href="#">social</a></li>
+                            <li><a href="#"><img src="../assets/footer-facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="../assets/footer-twitter.png" alt="twitter"></a></li>
+                            <li><a href="#"><img src="../assets/footer-youtube.png" alt="YouTube"></a></li>
+                            <li><a href="#"><img src="../assets/footer-pinterest.png" alt="pinterest"></a></li>
+                            <li><a href="#"><img src="../assets/footer-periscope.png" alt="Maps"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ footer {
     background-size: cover;
     height: 400px;
 
-    .container {
+    #footer-top {
         display: flex;
         justify-content: space-between;
     }
@@ -148,7 +148,7 @@ footer {
 
     /*Socials*/
     #footer-info {
-        background-color: gray;
+        background-color: #303030;
         height: 80px;
         position: relative;
         z-index: 1;
@@ -158,11 +158,22 @@ footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            button {
+                padding: 10px 15px;
+                background-color: #303030;
+                border: 2px solid #0282F9;
+                color: white;
+                cursor: pointer;
+            }
         }
 
         #socials {
             display: flex;
+            align-items: center;
             gap: 25px;
+            color: #0282F9;
+            height: 100%;
 
             ul {
                 display: flex;
