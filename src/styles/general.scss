@@ -6,6 +6,10 @@
 }
 
 //General
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 ul {
     list-style-type: none;
 }
@@ -14,9 +18,13 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 //Utils
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     height: 100%;
 }

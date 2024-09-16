@@ -25,7 +25,7 @@ export default {
         <div class="container">
             <!--LOGO-->
             <section id="logo">
-                LOGO
+                <img src="../assets/dc-logo.png" alt="DC Main Logo">
             </section>
 
             <!--LINKS-->
@@ -40,7 +40,6 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    background-color: aqua;
     width: 100%;
     height: 100px;
 
@@ -51,8 +50,8 @@ header {
     }
 
     #logo {
-        background-color: yellow;
-        width: 100px;
+        width: 80px;
+        height: 80px;
         text-align: center;
     }
 
@@ -68,8 +67,23 @@ header {
             line-height: 100px;
             height: 100%;
             padding: 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 7px solid white;
 
-            border-bottom: 10px solid white;
+            &:active,
+            &:hover {
+                border-bottom: 7px solid #0282F9;
+            }
+
+            a {
+                color: #666161;
+            }
+
+            &:active a,
+            &:hover a {
+                color: #0282F9;
+            }
         }
     }
 }
