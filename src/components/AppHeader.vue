@@ -31,7 +31,9 @@ export default {
             <!--LINKS-->
             <nav id="navbar-links">
                 <ul>
-                    <li v-for="link in headerLinks"><a href="#">{{ link }}</a></li>
+                    <li v-for="link in headerLinks" :class="(link === 'Comics') ? 'active' : ''"><a href="#">{{ link
+                            }}</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -71,7 +73,7 @@ header {
             font-weight: bold;
             border-bottom: 7px solid white;
 
-            &:active,
+            &.active,
             &:hover {
                 border-bottom: 7px solid #0282F9;
             }
@@ -80,7 +82,7 @@ header {
                 color: #666161;
             }
 
-            &:active a,
+            &.active a,
             &:hover a {
                 color: #0282F9;
             }
