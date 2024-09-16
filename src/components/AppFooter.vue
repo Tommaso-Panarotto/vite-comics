@@ -70,6 +70,7 @@ export default {
                     </ul>
                 </div>
             </nav>
+            <div id="logo-bg"></div>
         </div>
         <!--sign-up and socials-->
         <section id="footer-info">
@@ -96,11 +97,27 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    padding: 40px 0;
-    background-color: green;
-    height: 450px;
+    background-image: url(../assets/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo-bg {
+        height: 500px;
+        width: 600px;
+        background-image: url(../assets/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 80px;
+    }
 
     #general-links {
+        padding-top: 50px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -116,10 +133,15 @@ footer {
 
             h3 {
                 margin-bottom: 15px;
+                color: white;
             }
 
             li {
-                margin-bottom: 5px;
+                margin-bottom: 7px;
+
+                a {
+                    color: gray;
+                }
             }
         }
     }
@@ -128,6 +150,8 @@ footer {
     #footer-info {
         background-color: gray;
         height: 80px;
+        position: relative;
+        z-index: 1;
 
         .footer-link {
             height: 100%;

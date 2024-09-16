@@ -22,6 +22,8 @@ export default {
 main {
     background-color: #1C1C1C;
     height: 140px;
+    position: relative;
+    z-index: 1;
 
     #content {
         line-height: 120px;
