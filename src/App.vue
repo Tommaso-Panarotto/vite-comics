@@ -2,6 +2,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
+import AppIconDc from "./components/AppIconDc.vue";
 
 export default {
     data() {
@@ -12,7 +13,8 @@ export default {
     components: {
         AppHeader,
         AppMain,
-        AppFooter
+        AppFooter,
+        AppIconDc
     }
 }
 </script>
@@ -20,6 +22,7 @@ export default {
 <template>
     <AppHeader />
     <AppMain />
+    <AppIconDc />
     <AppFooter />
 </template>
 
