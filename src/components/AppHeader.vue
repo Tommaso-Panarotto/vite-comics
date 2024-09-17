@@ -25,7 +25,7 @@ export default {
         <div class="container">
             <!--LOGO-->
             <section id="logo">
-                <img src="../assets/dc-logo.png" alt="DC Main Logo">
+                <img src="../assets/img/dc-logo.png" alt="DC Main Logo">
             </section>
 
             <!--LINKS-->

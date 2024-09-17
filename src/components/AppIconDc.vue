@@ -3,12 +3,17 @@ export default {
     data() {
         return {
             icons: [
-                { name: "digital comics", image: "../assets/buy-comics-digital-comics.png" },
-                { name: "dc merchandise", image: "../assets/buy-comics-merchandise.png" },
-                { name: "subscription", image: "../assets/buy-comics-subscription.png" },
-                { name: "comic shop locator", image: "../assets/buy-comics-shop-locator.png" },
-                { name: "dc power visa", image: "../assets/buy-dc-power-visa.svg" }
+                { name: "digital comics", imageUrl: "buy-comics-digital-comics.png" },
+                { name: "dc merchandise", imageUrl: "buy-comics-merchandise.png" },
+                { name: "subscription", imageUrl: "buy-comics-subscriptions.png" },
+                { name: "comic shop locator", imageUrl: "buy-comics-shop-locator.png" },
+                { name: "dc power visa", imageUrl: "buy-dc-power-visa.svg" }
             ]
+        }
+    },
+    methods: {
+        getImageUrl(imageUrl) {
+            return new URL(`../assets/img/${imageUrl}`, import.meta.url).href;
         }
     }
 }
@@ -18,7 +23,7 @@ export default {
     <div class="icons-link">
         <div class="container">
             <ul>
-                <li v-for="icon in icons"><img src="../assets/buy-comics-merchandise.png" alt="icon.name">
+                <li v-for="icon in icons"><img :src="getImageUrl(icon.imageUrl)" :alt="icon.name">
                     <p>{{ icon.name.toUpperCase() }}</p>
                 </li>
             </ul>
@@ -39,13 +44,15 @@ export default {
         height: 100%;
 
         li {
+            width: calc((100% / 5) - 35px);
             display: flex;
             align-items: center;
             gap: 20px;
             color: white;
+            cursor: pointer;
 
             img {
-                width: 60px;
+                max-height: 60px;
             }
         }
     }

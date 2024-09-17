@@ -82,11 +82,11 @@ export default {
                     <div id="socials">
                         <h3>FOLLOW US</h3>
                         <ul>
-                            <li><a href="#"><img src="../assets/footer-facebook.png" alt="facebook"></a></li>
-                            <li><a href="#"><img src="../assets/footer-twitter.png" alt="twitter"></a></li>
-                            <li><a href="#"><img src="../assets/footer-youtube.png" alt="YouTube"></a></li>
-                            <li><a href="#"><img src="../assets/footer-pinterest.png" alt="pinterest"></a></li>
-                            <li><a href="#"><img src="../assets/footer-periscope.png" alt="Maps"></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter"></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="YouTube"></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest"></a></li>
+                            <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="Maps"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    background-image: url(../assets/footer-bg.jpg);
+    background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -110,7 +110,7 @@ footer {
     #logo-bg {
         height: 500px;
         width: 600px;
-        background-image: url(../assets/dc-logo-bg.png);
+        background-image: url(../assets/img/dc-logo-bg.png);
         background-repeat: no-repeat;
         position: relative;
         bottom: 80px;
