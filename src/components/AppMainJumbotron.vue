@@ -9,11 +9,14 @@ export default {
 </script>
 
 <template>
-    <h3>AppMainJumbotron</h3>
+    <section id="jumbotron"></section>
 </template>
 
 <style lang="scss" scoped>
-* {
-    color: white;
+#jumbotron {
+    height: 700px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>
