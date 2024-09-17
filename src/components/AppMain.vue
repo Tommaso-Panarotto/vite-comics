@@ -31,10 +31,18 @@ main {
     background-color: #1C1C1C;
 
     #content {
-        line-height: 120px;
         color: white;
-        font-size: 2rem;
+        text-transform: uppercase;
         font-weight: bold;
+
+        ul {
+            display: flex;
+            gap: 10px;
+
+            li {
+                width: calc((100% / 6) - 10px);
+            }
+        }
     }
 }
 </style>

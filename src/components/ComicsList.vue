@@ -88,7 +88,10 @@ export default {
 </script>
 
 <template>
-
+    <ul>
+        <ComicsListCard v-for="(comic, index) in dcComicsList" :key="index" :comicImageUrl="comic.thumb"
+            :comicName="comic.series" />
+    </ul>
 </template>
 
 <style lang="scss" scoped></style>

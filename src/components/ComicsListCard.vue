@@ -4,12 +4,25 @@ export default {
         return {
 
         }
+    },
+    props: {
+        comicImageUrl: {
+            type: String,
+            required: true
+        },
+        comicName: {
+            type: String,
+            required: true
+        }
     }
 }
 </script>
 
 <template>
-    <h3>ComicsListCard</h3>
+    <li>
+        <img :src="comicImageUrl" :alt="comicName">
+        {{ comicName }}
+    </li>
 </template>
 
 <style lang="scss" scoped></style>
