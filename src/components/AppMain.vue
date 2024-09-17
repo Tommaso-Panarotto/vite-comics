@@ -1,18 +1,26 @@
 <script>
+import ComicsList from "./ComicsList.vue";
+import AppMainJumbotron from "./AppMainJumbotron.vue";
+
 export default {
     data() {
         return {
 
         }
+    },
+    components: {
+        ComicsList,
+        AppMainJumbotron
     }
 }
 </script>
 
 <template>
     <main>
+        <AppMainJumbotron />
         <div class="container">
             <section id="content">
-                <p>--Content goes here--</p>
+                <ComicsList />
             </section>
         </div>
     </main>
