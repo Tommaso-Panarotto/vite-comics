@@ -22,6 +22,9 @@ export default {
             <section id="content">
                 <ComicsList />
             </section>
+            <button>
+                LOAD MORE
+            </button>
         </div>
     </main>
 </template>
@@ -29,6 +32,16 @@ export default {
 <style lang="scss" scoped>
 main {
     background-color: #1C1C1C;
+    text-align: center;
+
+    button {
+        padding: 10px 35px;
+        margin: 35px 0 20px 0;
+        border: 0;
+        cursor: pointer;
+        background-color: #0282F9;
+        color: white;
+    }
 
     #content {
         color: white;
@@ -37,11 +50,8 @@ main {
 
         ul {
             display: flex;
-            gap: 10px;
-
-            li {
-                width: calc((100% / 6) - 10px);
-            }
+            flex-wrap: wrap;
+            gap: 20px 20px;
         }
     }
 }

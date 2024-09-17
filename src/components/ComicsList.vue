@@ -94,4 +94,8 @@ export default {
     </ul>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+ul {
+    margin-top: 40px;
+}
+</style>
