@@ -96,6 +96,6 @@ export default {
 
 <style lang="scss" scoped>
 ul {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 </style>
